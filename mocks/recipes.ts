@@ -1,0 +1,450 @@
+import { Recipe } from '@/types/recipe';
+
+export const recipes: Recipe[] = [
+  {
+    id: '1',
+    title: "Nonna's Sunday Gravy",
+    cuisine: 'Italian',
+    story: "Every Sunday morning, the aroma would fill our tiny Brooklyn apartment. Nonna would wake at dawn, her weathered hands working the tomatoes she'd canned the summer before. She never measured anything - it was all 'un poco di questo' (a little of this). When she passed, we found her sauce-stained recipe card tucked in her Bible, written in her broken English. 'For my bambini,' it said, 'so you never forget where you come from.' Now, forty years later, I still cry when I smell basil and garlic simmering together.",
+    author: 'Maria Benedetti',
+    generation: '4th Generation',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800',
+    prepTime: '30 min',
+    cookTime: '4 hours',
+    servings: 8,
+    ingredients: [
+      '2 cans (28 oz each) San Marzano tomatoes',
+      '1/4 cup extra virgin olive oil',
+      '8 cloves garlic, sliced thin',
+      '1 large onion, finely chopped',
+      'Fresh basil leaves (handful)',
+      '1 tsp dried oregano',
+      'Salt and black pepper',
+      '1 tsp sugar (Nonna\'s secret)',
+      '1/2 cup red wine',
+      'Meatballs and sausages (optional)'
+    ],
+    instructions: [
+      'Heat olive oil in a heavy pot over medium heat',
+      'Sauté garlic until golden, not brown - "like sunset" Nonna would say',
+      'Add onions, cook until translucent',
+      'Crush tomatoes by hand, add to pot with their juice',
+      'Add wine, let it sing (simmer)',
+      'Season with salt, pepper, and that pinch of sugar',
+      'Add basil, keeping some stems for flavor',
+      'Simmer on lowest heat for 4 hours, stirring with love',
+      'Add meatballs in the last hour if using',
+      'Taste and adjust - trust your heart'
+    ],
+    familyOrigin: 'Sicily, Italy',
+    yearEstablished: '1890s',
+    tags: ['comfort food', 'sunday dinner', 'family tradition'],
+    likes: 127,
+    comments: [
+      {
+        id: '1',
+        author: 'Giuseppe R.',
+        text: 'This brings back so many memories of my childhood! My nonna made something very similar.',
+        timestamp: new Date('2024-01-15T10:30:00Z'),
+        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+      },
+      {
+        id: '2',
+        author: 'Sarah M.',
+        text: 'Made this for Sunday dinner and my family couldn\'t stop raving about it. The secret sugar really makes a difference!',
+        timestamp: new Date('2024-01-20T15:45:00Z'),
+        avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face'
+      }
+    ]
+  },
+  {
+    id: '2',
+    title: "Babushka's Borscht",
+    cuisine: 'Ukrainian',
+    story: "During the siege of Leningrad, my babushka survived on potato peels and hope. When she finally escaped to America with nothing but the clothes on her back, she recreated this borscht from memory - the same one her mother made in the old country. 'In the darkest winter,' she'd tell me while stirring the pot, 'this soup was our sunshine.' She passed last spring, but every time I make this, I hear her voice: 'Vnuchka, a full stomach and a warm heart can survive anything.' The beets still stain my hands purple, just like hers.",
+    author: 'Oksana Petrov',
+    generation: '3rd Generation',
+    imageUrl: 'https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?w=800',
+    prepTime: '45 min',
+    cookTime: '2 hours',
+    servings: 10,
+    ingredients: [
+      '3 large beets, peeled and grated',
+      '2 carrots, julienned',
+      '1 large onion, diced',
+      '3 potatoes, cubed',
+      '1/2 head cabbage, shredded',
+      '2 tbsp tomato paste',
+      '8 cups beef or vegetable broth',
+      '2 bay leaves',
+      '3 cloves garlic, minced',
+      '2 tbsp vinegar',
+      'Fresh dill',
+      'Sour cream for serving',
+      'Dark rye bread'
+    ],
+    instructions: [
+      'Sauté onions until golden in a large pot',
+      'Add grated beets and carrots, cook for 10 minutes',
+      'Stir in tomato paste, cook until fragrant',
+      'Add broth, bring to a gentle boil',
+      'Add potatoes and bay leaves, simmer 20 minutes',
+      'Add cabbage, cook until tender',
+      'Season with vinegar, salt, and pepper',
+      'Add garlic in the last 5 minutes',
+      'Let rest off heat for 30 minutes - patience makes it better',
+      'Serve with a dollop of sour cream and fresh dill',
+      'Must have dark bread for dipping - this is law'
+    ],
+    familyOrigin: 'Kiev, Ukraine',
+    yearEstablished: '1920s',
+    tags: ['soul food', 'winter warmer', 'survival story'],
+    likes: 89,
+    comments: [
+      {
+        id: '3',
+        author: 'Viktor P.',
+        text: 'My babusya would be proud. This is exactly how she made it during the harsh winters.',
+        timestamp: new Date('2024-01-18T12:20:00Z')
+      }
+    ]
+  },
+  {
+    id: '3',
+    title: "Mama's Jollof Rice",
+    cuisine: 'Nigerian',
+    story: "Mama learned this recipe from her mother, who learned it from hers, stretching back to our village in Nigeria. When we immigrated to London, Mama would cry in the kitchen, homesick, while the familiar scent of scotch bonnets and thyme filled our cold flat. 'This rice carries our ancestors,' she'd say, teaching me to wash the grains until the water ran clear. 'Each grain is a prayer for those who came before.' She's been gone five years now, but when I make this for my children, I swear I feel her hands guiding mine.",
+    author: 'Adaeze Okonkwo',
+    generation: '5th Generation',
+    imageUrl: 'https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=800',
+    prepTime: '20 min',
+    cookTime: '45 min',
+    servings: 6,
+    ingredients: [
+      '3 cups long-grain parboiled rice',
+      '5 large tomatoes, blended',
+      '1 red bell pepper, blended',
+      '2 scotch bonnet peppers',
+      '1 large onion, diced',
+      '3 tbsp tomato paste',
+      '2 cups chicken stock',
+      '1/4 cup vegetable oil',
+      '2 tsp curry powder',
+      '1 tsp thyme',
+      '2 bay leaves',
+      '1 tsp white pepper',
+      'Salt to taste'
+    ],
+    instructions: [
+      'Blend tomatoes and peppers until smooth',
+      'Fry tomato paste in oil until dark red',
+      'Add blended mixture, cook until reduced by half',
+      'The sauce must lose its raw taste - be patient',
+      'Add stock, bring to a boil',
+      'Add washed rice, stir once only',
+      'Add scotch bonnets whole (do not burst!)',
+      'Cover tightly, reduce heat to lowest setting',
+      'Steam for 30 minutes - no peeking!',
+      'Turn off heat, let sit 5 minutes',
+      'Fluff with a fork, remove peppers',
+      'The bottom should be slightly burnt - that\'s the prize'
+    ],
+    familyOrigin: 'Lagos, Nigeria',
+    yearEstablished: '1850s',
+    tags: ['celebration', 'heritage', 'party favorite'],
+    likes: 203,
+    comments: [
+      {
+        id: '4',
+        author: 'Chioma O.',
+        text: 'Finally! Someone who knows the real way to make jollof. The burnt bottom is indeed the prize! 🇳🇬',
+        timestamp: new Date('2024-01-22T18:30:00Z'),
+        avatar: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=100&h=100&fit=crop&crop=face'
+      },
+      {
+        id: '5',
+        author: 'Kwame A.',
+        text: 'Ghanaian here, but I have to admit... this looks incredible. Respect to your mama! 🙏',
+        timestamp: new Date('2024-01-23T09:15:00Z')
+      }
+    ]
+  },
+  {
+    id: '4',
+    title: "Abuela's Mole Negro",
+    cuisine: 'Mexican',
+    story: "Thirty-four ingredients. Three days of preparation. One hundred years of tradition. My abuela would start grinding chiles before sunrise, her metate worn smooth by generations of women before her. 'Mija,' she'd whisper, 'this mole holds our tears and our laughter.' During Day of the Dead, she'd make enough to feed the living and the spirits. The recipe was never written - she taught me by touch, smell, and intuition. When dementia stole her memories, she still remembered how to make this mole. Her hands knew the way home.",
+    author: 'Carmen Mendoza',
+    generation: '6th Generation',
+    imageUrl: 'https://images.unsplash.com/photo-1534352956036-cd81e27dd615?w=800',
+    prepTime: '3 days',
+    cookTime: '4 hours',
+    servings: 12,
+    ingredients: [
+      '8 mulato chiles, deseeded',
+      '6 negro chiles, deseeded',
+      '4 pasilla chiles, deseeded',
+      '2 white onions, quartered',
+      '8 garlic cloves',
+      '2 ripe plantains, sliced',
+      '4 tomatoes',
+      '4 tomatillos',
+      '1/2 cup sesame seeds',
+      '1/4 cup pumpkin seeds',
+      '1 Mexican chocolate tablet',
+      '1 tsp cumin',
+      '6 cloves',
+      '1 Mexican cinnamon stick',
+      '1/2 tsp black pepper',
+      '2 slices bread, torn',
+      '2 corn tortillas',
+      'Lard or oil for frying',
+      'Turkey or chicken stock',
+      'Salt to taste'
+    ],
+    instructions: [
+      'Day 1: Toast chiles until fragrant, soak overnight',
+      'Day 2: Char onions, garlic, tomatoes on comal',
+      'Fry plantains until caramelized',
+      'Toast spices until aromatic',
+      'Toast seeds separately until golden',
+      'Fry bread and tortillas until crispy',
+      'Grind everything in batches - traditionally on metate',
+      'Day 3: Fry the paste in lard for 30 minutes',
+      'Add stock slowly, stirring constantly',
+      'Simmer for 3-4 hours, stirring with wooden spoon',
+      'Add chocolate in final 30 minutes',
+      'The mole should coat the spoon like velvet',
+      'Serve over turkey with rice',
+      'Save some to offer to the ancestors'
+    ],
+    familyOrigin: 'Oaxaca, Mexico',
+    yearEstablished: '1800s',
+    tags: ['ceremony', 'Day of the Dead', 'ancestral'],
+    likes: 156,
+    comments: [
+      {
+        id: '6',
+        author: 'Rosa L.',
+        text: 'Three days of work, but worth every minute. My abuela is smiling down from heaven.',
+        timestamp: new Date('2024-01-19T14:45:00Z'),
+        avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face'
+      }
+    ]
+  },
+  {
+    id: '5',
+    title: "Grandma's Cornbread",
+    cuisine: 'Southern American',
+    story: "Grandma was born a sharecropper's daughter in Mississippi, 1922. This cornbread recipe fed her twelve siblings through the Depression. 'We didn't have much,' she'd say, 'but we had corn, and we had each other.' She'd bake it in the same cast iron skillet her mama gave her - seasoned with decades of love and bacon grease. Even when arthritis bent her fingers, she'd still make this every Sunday. 'Baby,' she'd tell me, 'this bread remembers every hand that's touched it.' That skillet sits on my stove now, still warm with her memory.",
+    author: 'James Washington',
+    generation: '4th Generation',
+    imageUrl: 'https://images.unsplash.com/photo-1598214886806-c87b84b7078b?w=800',
+    prepTime: '10 min',
+    cookTime: '25 min',
+    servings: 8,
+    ingredients: [
+      '1 cup yellow cornmeal',
+      '1 cup all-purpose flour',
+      '1/4 cup sugar (controversial but Grandma insisted)',
+      '1 tbsp baking powder',
+      '1 tsp salt',
+      '1 cup buttermilk',
+      '1/3 cup melted butter',
+      '1 large egg',
+      '2 tbsp bacon grease (for the skillet)',
+      'Honey butter for serving'
+    ],
+    instructions: [
+      'Preheat oven to 425°F with skillet inside',
+      'Mix dry ingredients in a bowl',
+      'Whisk wet ingredients separately',
+      'Combine just until mixed - don\'t overwork it',
+      'Pull hot skillet from oven, add bacon grease',
+      'Pour batter into sizzling skillet - it should hiss',
+      'Bake 20-25 minutes until golden',
+      'The edges should be crispy, center tender',
+      'Let rest 5 minutes before cutting',
+      'Serve warm with honey butter',
+      'Always save a piece for unexpected company'
+    ],
+    familyOrigin: 'Mississippi Delta',
+    yearEstablished: '1870s',
+    tags: ['soul food', 'comfort', 'Sunday dinner'],
+    likes: 94,
+    comments: [
+      {
+        id: '7',
+        author: 'Marcus W.',
+        text: 'That cast iron skillet makes all the difference. Mine belonged to my great-grandmother too.',
+        timestamp: new Date('2024-01-21T11:30:00Z')
+      }
+    ]
+  },
+  {
+    id: '6',
+    title: "Yiayia's Moussaka",
+    cuisine: 'Greek',
+    story: "Yiayia fled Greece during the civil war with nothing but her mother's moussaka recipe memorized like a prayer. In her new American kitchen, she'd layer the eggplant like sedimentary rock, each slice a year of exile. 'We build our home one layer at a time,' she'd say, tears mixing with the béchamel. She made this for every birthday, every heartbreak, every celebration. When she was dying, she made me promise to never use store-bought béchamel. 'From scratch,' she whispered, 'always from scratch. That's how we remember.'",
+    author: 'Dimitri Papadopoulos',
+    generation: '3rd Generation',
+    imageUrl: 'https://images.unsplash.com/photo-1626266799361-4156139abc8e?w=800',
+    prepTime: '1 hour',
+    cookTime: '1.5 hours',
+    servings: 8,
+    ingredients: [
+      '3 large eggplants, sliced',
+      '2 lbs ground lamb',
+      '2 onions, diced',
+      '4 garlic cloves, minced',
+      '1 can crushed tomatoes',
+      '1/2 cup red wine',
+      '1 tsp cinnamon',
+      '1/4 tsp nutmeg',
+      'Fresh oregano',
+      'For béchamel:',
+      '6 tbsp butter',
+      '6 tbsp flour',
+      '3 cups warm milk',
+      '2 egg yolks',
+      '1/2 cup Parmesan',
+      'Nutmeg'
+    ],
+    instructions: [
+      'Salt eggplant slices, let weep for 30 minutes',
+      'Pat dry, brush with oil, bake until golden',
+      'Brown lamb with onions until fragrant',
+      'Add garlic, tomatoes, wine, spices',
+      'Simmer until thick - this is the heart',
+      'For béchamel: melt butter, whisk in flour',
+      'Slowly add warm milk, stirring constantly',
+      'Cook until thick enough to coat spoon',
+      'Remove from heat, whisk in egg yolks quickly',
+      'Layer: eggplant, meat, eggplant, meat, béchamel',
+      'Bake at 350°F for 45 minutes until golden',
+      'Let rest 30 minutes - patience is crucial',
+      'Cut into squares, serve with village salad'
+    ],
+    familyOrigin: 'Crete, Greece',
+    yearEstablished: '1910s',
+    tags: ['celebration', 'Sunday lunch', 'diaspora'],
+    likes: 112,
+    comments: [
+      {
+        id: '8',
+        author: 'Elena K.',
+        text: 'Never use store-bought béchamel - your yiayia was absolutely right! From scratch always.',
+        timestamp: new Date('2024-01-17T16:20:00Z'),
+        avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face'
+      }
+    ]
+  },
+  {
+    id: '7',
+    title: "Halmoni's Kimchi Jjigae",
+    cuisine: 'Korean',
+    story: "Halmoni buried her kimchi jars in the backyard every winter, just like her mother did in Korea before the war separated them forever. She never saw her mother again, but she kept making this stew exactly as she was taught. 'The older the kimchi, the deeper the flavor,' she'd say, 'like memories.' Even in her final days, when she couldn't remember our names, she could still tell if the kimchi was ready by its smell. Now I make this when I miss her most, and for a moment, she's right there beside me, tasting for salt.",
+    author: 'Min-jung Park',
+    generation: '4th Generation',
+    imageUrl: 'https://images.unsplash.com/photo-1583224994076-ae951d019af7?w=800',
+    prepTime: '15 min',
+    cookTime: '30 min',
+    servings: 4,
+    ingredients: [
+      '2 cups aged kimchi, chopped',
+      '1/4 cup kimchi juice',
+      '200g pork belly, sliced',
+      '1/2 onion, sliced',
+      '2 green onions, chopped',
+      '1 tbsp gochugaru (Korean chili flakes)',
+      '1 tbsp gochujang',
+      '1 tsp sesame oil',
+      '2 cups water or anchovy stock',
+      '200g soft tofu',
+      '1 tsp sugar',
+      'Salt to taste'
+    ],
+    instructions: [
+      'Use kimchi aged at least 2 weeks - crucial!',
+      'Sauté pork belly until edges crisp',
+      'Add kimchi, stir-fry until fragrant',
+      'Add kimchi juice and gochugaru',
+      'Pour in stock, bring to vigorous boil',
+      'Add gochujang, sugar, simmer 20 minutes',
+      'Gently add tofu chunks',
+      'Simmer 5 more minutes',
+      'Drizzle with sesame oil',
+      'Top with green onions',
+      'Serve bubbling hot with rice',
+      'The pot should still be boiling at the table'
+    ],
+    familyOrigin: 'Seoul, Korea',
+    yearEstablished: '1940s',
+    tags: ['comfort food', 'winter', 'healing'],
+    likes: 78,
+    comments: [
+      {
+        id: '9',
+        author: 'Jin S.',
+        text: 'The aged kimchi is everything! My halmoni always said the same thing about memories.',
+        timestamp: new Date('2024-01-16T13:45:00Z')
+      }
+    ]
+  },
+  {
+    id: '8',
+    title: "Nani's Dal Makhani",
+    cuisine: 'Indian',
+    story: "During Partition, Nani walked from Lahore to Delhi with this recipe in her heart and her baby (my mother) in her arms. She lost everything else. In the refugee camps, she'd make this dal with whatever she could find, teaching other displaced women the recipe. 'Food is home,' she'd say, 'and home is wherever we can feed our children.' She slow-cooked it overnight on dying embers, the way her grandmother did. I still wake at 3 AM sometimes, thinking I smell it cooking, and for a moment, Nani is alive again.",
+    author: 'Priya Sharma',
+    generation: '4th Generation',
+    imageUrl: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800',
+    prepTime: '8 hours (soaking)',
+    cookTime: '8 hours',
+    servings: 6,
+    ingredients: [
+      '1 cup whole black lentils (urad dal)',
+      '1/4 cup kidney beans (rajma)',
+      '4 tbsp butter',
+      '1 cup heavy cream',
+      '2 tomatoes, pureed',
+      '1 inch ginger, minced',
+      '4 garlic cloves, minced',
+      '2 green chilies',
+      '1 tsp cumin seeds',
+      '1 tsp garam masala',
+      '1/2 tsp red chili powder',
+      'Salt to taste',
+      'Kasuri methi (dried fenugreek leaves)'
+    ],
+    instructions: [
+      'Soak lentils and beans overnight',
+      'Pressure cook until completely soft',
+      'Mash some lentils against the pot',
+      'In another pan, melt butter slowly',
+      'Add cumin seeds until they dance',
+      'Sauté ginger-garlic until golden',
+      'Add tomato puree, cook until oil separates',
+      'Add this to the lentils',
+      'Simmer on lowest heat for 6-8 hours',
+      'Stir every hour, add water if needed',
+      'The dal should be creamy, velvety',
+      'Add cream in the last hour',
+      'Crush kasuri methi between palms, add',
+      'Serve with a dollop of butter melting on top'
+    ],
+    familyOrigin: 'Lahore (now Pakistan)',
+    yearEstablished: '1900s',
+    tags: ['Partition story', 'overnight cooking', 'refugee recipe'],
+    likes: 145,
+    comments: [
+      {
+        id: '10',
+        author: 'Raj K.',
+        text: 'My dadi also came during Partition. These recipes are our living history. Thank you for sharing.',
+        timestamp: new Date('2024-01-14T20:15:00Z'),
+        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
+      }
+    ]
+  }
+];
